@@ -28,29 +28,15 @@
           {{ currentTutorial.published ? "Published" : "Pending" }}
         </div>-->
       </form>
-  
-      <!--<button
-        class="badge badge-primary mr-2"
-        *ngIf="currentTutorial.published"
-        (click)="updatePublished(false)"
-      >
-        UnPublish
-      </button>
-      <button
-        *ngIf="!currentTutorial.published"
-        class="badge badge-primary mr-2"
-        (click)="updatePublished(true)"
-      >
-        Publish
-      </button>-->
-  
-      <button class="badge badge-danger mr-2" (click)="deletePost()">
+      <br>  
+      <button class="btn btn-primary" (click)="deletePost()">
         Delete
       </button>
   
       <button
         type="submit"
-        class="badge badge-success mb-2"
+        class="btn btn-primary"
+        style="margin-left: 10px;"
         (click)="updatePost()"
       >
         Update

@@ -17,7 +17,7 @@ export class PostsListComponent implements OnInit {
   constructor(private postService: PostService) { }
 
   getLimitedPostText(post: Post): string {
-    const limitedText100Words = post.text?.split(" ").slice(0, 10).join(" ");
+    const limitedText100Words = post.text?.split(" ").slice(0, 100).join(" ");
     return limitedText100Words ?? "No Text";
   }
 
