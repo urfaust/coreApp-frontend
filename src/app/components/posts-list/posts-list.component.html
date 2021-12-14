@@ -26,7 +26,7 @@
           [class.active]="i == currentIndex"
           
         >
-          <h5 (click)="setActivePost(post, i)" style="cursor: pointer;"><b>{{ post.title }} (post id: {{ post.id }})</b></h5>
+          <h5 (click)="setActivePost(post, i)" style="cursor: pointer;"><b>{{ post.title }} (pid: {{ post.id }})</b></h5>
           <span>{{ getLimitedPostText(post) }}...</span>
         </li>
       </ul>
